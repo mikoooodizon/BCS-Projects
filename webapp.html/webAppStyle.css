@@ -7,7 +7,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f2f2f2;
+    background-color: #000;
   }
   
   .container {
@@ -15,20 +15,25 @@ html, body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    text-align: center;
   }
   
   h1 {
     margin-top: 0;
+    font-family: Times New Roman;
   }
   
   form {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
   }
   
   label {
     margin-bottom: 10px;
+    font-family: Times New Roman;
   }
   
   input {
@@ -37,6 +42,10 @@ html, body {
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 16px;
+    font-family: Times New Roman;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
   }
   
   button {
@@ -47,6 +56,9 @@ html, body {
     border: none;
     cursor: pointer;
     font-size: 16px;
+    font-family: Times New Roman;
+    width: 100%;
+    max-width: 300px;
   }
   
   button:hover {
@@ -57,5 +69,6 @@ html, body {
     font-size: 24px;
     font-weight: bold;
     text-align: center;
+    font-family: Times New Roman;
   }
   

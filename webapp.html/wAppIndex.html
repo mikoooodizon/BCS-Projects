@@ -3,23 +3,26 @@
   <head>
     <meta charset="UTF-8">
     <title>Financial Freedom Calculator</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Financial Freedom Calculator</h1>
-    <form>
-      <label for="income">Annual Income:</label>
-      <input type="number" id="income" name="income"><br>
+    <div class="container">
+      <h1>Financial Freedom Calculator</h1>
+      <form>
+        <label for="income">Annual Income:</label>
+        <input type="number" id="income" name="income">
 
-      <label for="expenses">Annual Expenses:</label>
-      <input type="number" id="expenses" name="expenses"><br>
+        <label for="expenses">Annual Expenses:</label>
+        <input type="number" id="expenses" name="expenses">
 
-      <label for="spend">Projected Spend Per Year:</label>
-      <input type="number" id="spend" name="spend"><br>
+        <label for="spend">Projected Spend Per Year:</label>
+        <input type="number" id="spend" name="spend">
 
-      <button type="button" onclick="calculate()">Calculate</button>
-    </form>
+        <button type="button" onclick="calculate()">Calculate</button>
+      </form>
 
-    <p id="result"></p>
+      <p id="result"></p>
+    </div>
 
     <script src="app.js"></script>
   </body>

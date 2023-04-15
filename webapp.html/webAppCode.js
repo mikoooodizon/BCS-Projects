@@ -1,14 +1,18 @@
 function calculate() {
-    const income = parseFloat(document.getElementById("income").value);
-    const expenses = parseFloat(document.getElementById("expenses").value);
-    const spend = parseFloat(document.getElementById("spend").value);
-    const years = 20;
-    const annualSpendIncrease = 0.06;
-  
-    const annualDifference = income - expenses;
-    const totalSavings = (spend / annualDifference) * (1 - Math.pow(1 + annualSpendIncrease, -years)) / annualSpendIncrease;
-  
-    const resultElement = document.getElementById("result");
-    resultElement.innerHTML = `You need to save $${totalSavings.toFixed(2)} per year for ${years} years to achieve financial freedom.`;
+    const income = parseFloat(document.getElementById('incomeInput').value.replace(/,/g, ''));
+    const expenses = parseFloat(document.getElementById('expensesInput').value.replace(/,/g, ''));
+    const spend = parseFloat(document.getElementById('spendInput').value.replace(/,/g, ''));
+    
+    const projectedSpend = spend * Math.pow(1.06, 20);
+    const result = projectedSpend / (income - expenses);
+    
+    document.getElementById('result').textContent = result.toLocaleString('en-US', {
+      style: 'currency',
+      currency: 'USD',
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    });
+    
+    return result ;
   }
   

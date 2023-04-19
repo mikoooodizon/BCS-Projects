@@ -4,7 +4,7 @@ function calculate() {
     const spend = parseFloat(document.getElementById('spendInput').value.replace(/,/g, ''));
     
     const projectedSpend = spend * Math.pow(1.06, 20);
-    const result = projectedSpend / (income - expenses);
+    const result = projectedSpend * 20 / (income - expenses);
     
     document.getElementById('result').textContent = result.toLocaleString('en-US', {
       style: 'currency',

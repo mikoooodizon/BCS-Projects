@@ -66,12 +66,14 @@ function calculate() {
     }
   });
 
-  document.getElementById('result').textContent = result;
+  const canvas = chart.canvas;
+  const dataURL = canvas.toDataURL('image/png');
   const downloadLink = document.getElementById('download-link');
-  downloadLink.href = chart.toBase64Image();
+  downloadLink.href = dataURL;
   downloadLink.download = 'nest-egg-chart.png';
   downloadLink.style.display = 'block';
 
+  document.getElementById('result').textContent = result;
+
   return result;
 }
-

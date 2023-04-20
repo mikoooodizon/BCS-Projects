@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <title>F.I 30 </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="webAppStyle.css"> <!-- reason css wasn't working before was wrong href!-->
+    <link rel="stylesheet" href="webAppStyle.css">
   </head>
   <body>
     <div class="container">
-      <h1>  Retire? </h1>
+      <h1>Retire?</h1>
       <form>
         <label for="income">Annual Income:</label>
         <input type="number" id="incomeInput" name="income">
@@ -23,10 +23,13 @@
         
       </form>
       
-
       <p id="result"></p>
+
+      <canvas id="chart"></canvas>
+      <a id="download-link" style="display: none;">Download chart</a>
     </div>
 
-    <script src="webAppCode.js"></script> <!-- ALWAYS MIND THE SRC-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="webAppCode.js"></script>
   </body>
 </html>

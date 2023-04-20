@@ -14,18 +14,18 @@ function calculate() {
 
   remainingYears = Math.ceil(Math.log(nestEgg / (income - expenses)) / Math.log(growthRate));
 
-  const result = `With a 6% annual growth rate, you'll need to save up ${nestEgg.toLocaleString('en-US', {
+  const result = `With a 6% annual growth rate on your savings, you'll need to save up ${nestEgg.toLocaleString('en-US', {
     style: 'currency',
     currency: 'USD',
     minimumFractionDigits: 0,
     maximumFractionDigits: 0,
-  })} to sustain your projected spend of ${spend.toLocaleString('en-US', {
+  })} to sustain your ideal annual spend of ${spend.toLocaleString('en-US', {
     style: 'currency',
     currency: 'USD',
     minimumFractionDigits: 2,
     maximumFractionDigits: 2,
-  })} for 30 years. You'll need to save for an additional ${remainingYears} years to reach this goal.`;
-
+  })} for the next 30 years. You'll need to save for an additional ${remainingYears} years to reach this goal.`;
+// need to add if and then statements here
   const data = {
     labels: [],
     datasets: [

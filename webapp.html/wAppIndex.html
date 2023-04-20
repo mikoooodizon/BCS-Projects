@@ -22,11 +22,13 @@
         <button type="button" onclick="calculate()">Calculate</button>
         
       </form>
-      
+
       <p id="result"></p>
 
-      <canvas id="chart"></canvas>
-      <a id="download-link" style="display: none;">Download chart</a>
+      <div class="chart-container">
+        <canvas id="chart"></canvas>
+        <a id="download-link" style="display: none;">Download chart</a>
+      </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
